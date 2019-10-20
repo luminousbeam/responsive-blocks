@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+#header {
+    height: 150px;
+    background-color: green;
+}
+
+#main-content {
+    background-color: red;
+}
+
+#main-content .subcontents {
+    height: 200px;
+    background-color: yellow;;
+}
+
+#advertisement {
+    height: 100px;
+    background-color: purple;
+}
+
+@media only screen and (max-width: 480px) {
+    #header {
+        width: 96%;
+        margin: 3% 2%;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #main-content {
+        width: 88%;
+        height: 765px;
+        margin: 2% 2%;
+        padding: 4%;
+    } 
+
+    #main-content .subcontents {
+        width: 99.5%;
+    }
+
+    #main-content > div:nth-child(1), #main-content > div:nth-child(2) {
+        margin-bottom: 3%;
+    }
+
+    #advertisement {
+        width: 99.5%;
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #header {
+        width: 96%;
+        margin: 3% 2%;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #main-content {
+        width: 90%;
+        height: 560px;
+        margin: 2% 2%;
+        padding: 3%;
+    } 
+
+    #main-content .subcontents {
+        width: 48%;
+        display: inline-block;
+    }
+
+    #main-content > div:nth-child(1) {
+        margin-right: 3%;
+    }
+
+    #main-content > div:nth-child(3) {
+        margin-top: 3%;
+    }
+
+    #advertisement {
+        height: 125px;
+        width: 100%;
+        display: inline-block;
+        margin: 3% 0;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    #wrapper {
+        width: 98%;
+        margin: 0 auto;
+        padding: 1%;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #navigation {
+        width: 25%;
+        height: 350px;
+        background-color: blue;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2%;
+    }
+
+    #main-content {
+        width: 69%;
+        height: 400px;
+        display: inline-block;
+        padding: 2%;
+        margin: 2% 0 0 2%;
+    }
+
+    #main-content .subcontents {
+        width: 32%;
+        height: 225px;
+        display: inline-block;
+    }
+
+    #main-content > div:nth-child(2) {
+        margin: 0 2%;
+    }
+
+    #advertisement {
+        width: 100%;
+        display: inline-block;
+        margin-top: 3%;
+    }
+}
